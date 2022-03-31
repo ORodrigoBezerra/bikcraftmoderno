@@ -1,37 +1,34 @@
 .bicicletas-bg {
   background: linear-gradient(to right, var(--cor-0) 30%, var(--cor-11) 0%);
 }
+
 .bicicletas {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
-  padding: 60px 0px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .bicicletas-imagem {
   display: grid;
-  /* position: relative; */
 }
+
 .bicicletas-imagem img {
   grid-area: 1/1;
 }
+
 .bicicletas-imagem span {
   grid-area: 1/1;
   place-self: start end;
-  margin-top: 10px;
-
+  margin-top: 20px;
   background: var(--cor-12);
-  top: 10px;
-  right: 0px;
-  padding: 26px 16px 16px 16px;
-  border-radius: 4px 0px 0px 4px;
-  border-left: solid 1px rgb(65, 65, 65);
-
-  /* display: inline-block;
-  position: absolute; */
+  display: inline-block;
+  padding: 8px 16px 8px 8px;
+  border-radius: 4px 0 0 4px;
 }
 
-.bicicleta-conteudo {
+.bicicletas-conteudo {
   display: grid;
   grid-template-columns: 1fr auto;
   align-content: start;
@@ -45,20 +42,24 @@
 .bicicletas h2 {
   margin-bottom: 20px;
 }
+
 .bicicletas h2::before {
   content: "";
   display: block;
   width: 12px;
   height: 8px;
   background-color: var(--cor-p1);
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
+
 .bicicletas p {
   margin-bottom: 32px;
 }
+
 .bicicletas a {
   place-self: end;
 }
+
 .bicicletas li {
   display: flex;
   align-items: center;
@@ -66,48 +67,36 @@
 
 .bicicletas ul {
   display: grid;
-  gap: 10px;
+  gap: 16px;
 }
 
-/* .bicicletas li + li {
-  margin-top: 10px;
-} */
-.bicicletas li img {
-  padding-right: 5px;
+.bicicletas-conteudo img {
   width: 24px;
+  margin-right: 8px;
 }
 
 @media (max-width: 800px) {
+  .bicicletas-bg {
+    background: var(--cor-11);
+  }
   .bicicletas {
-    display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
-    padding: 20px;
-    padding-bottom: 40px;
     padding-top: 40px;
-  }
-  .bicicletas-bg {
-    background: linear-gradient(to bottom, var(--cor-0) 30%, var(--cor-11) 0%);
+    padding-bottom: 40px;
   }
 }
 
 @media (max-width: 600px) {
-  .bicicleta-conteudo {
+  .bicicletas-conteudo {
     grid-template-columns: 1fr;
   }
   .bicicletas ul {
-    margin-bottom: 30px;
+    font-size: 1rem;
     grid-template-columns: 1fr 1fr;
-    font-size: 14px;
-  }
-  .bicicletas li img {
-    padding-right: 5px;
-    width: 20px;
+    margin-bottom: 32px;
   }
   .bicicletas a {
     place-self: start;
-  }
-  .bicicletas p {
-    font-size: 16px;
   }
 }

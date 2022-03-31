@@ -1,5 +1,5 @@
 .header-bg {
-  background: var(--cor-12);
+  background-color: var(--cor-12);
 }
 
 .header {
@@ -11,18 +11,19 @@
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
 .header-menu {
   display: flex;
-  gap: 40px;
   flex-wrap: wrap;
+  gap: 40px;
 }
 
 .header-menu a {
   display: inline-block;
   padding: 16px 0px;
-
   position: relative;
 }
+
 .header-menu a:after {
   content: "";
   display: block;
@@ -48,7 +49,7 @@
     border-radius: 4px;
   }
   .header-menu a:hover {
-    background: var(--cor-10);
+    background-color: var(--cor-10);
   }
   .header a:after {
     display: none;
