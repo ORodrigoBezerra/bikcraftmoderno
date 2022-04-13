@@ -1,6 +1,7 @@
 @import "./global/global.css";
 @import "./utilidades/tipografia.css";
 @import "./utilidades/cores.css";
+@import "./utilidades/animacao.css";
 
 @import "./global/header.css";
 @import "./global/footer.css";
@@ -28,9 +29,12 @@
 @import "./seguros/vantagens.css";
 @import "./seguros/perguntas.css";
 
-/* contato */
+/* Contato */
 @import "./contato/contato.css";
 @import "./contato/lojas.css";
+
+/* Contato */
+@import "./orcamento/orcamento.css";
 
 /* Termos */
 @import "./termos/termos.css";
